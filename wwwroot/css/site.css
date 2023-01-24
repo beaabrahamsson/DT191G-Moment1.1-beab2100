@@ -1,0 +1,122 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: #f5f3ef
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f5f3ef;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav-item {
+    background-color: #DDD8D0;
+    color: white;
+    width: 200px;
+    margin: 10px;
+    text-decoration: none;
+    border: solid 1px #929292;
+    text-align: center;
+}
+
+#myLinks {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.date {
+    background-color: #DDD8D0;
+    border: solid 1px #929292;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    height: 50px;
+    background-color: #f5f3ef;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar #myLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 30px;
+        padding: 10px 30px;
+        width: 100%;
+    }
+
+    .date {
+        margin: auto;
+    }
+
+    .navbar-brand {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+        margin-top: 30px;
+        margin-left: 350px;
+        padding: 1px 16px;
+        height: 1000px;
+        width: 50%;
+    }
+}
